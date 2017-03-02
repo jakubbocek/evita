@@ -1,0 +1,81 @@
+﻿@import "mixins";
+.footer{
+  color: #797979;
+  a{
+    color: #797979;
+  }
+}
+.first-line{
+  border-top:12px solid #fafafa;
+  margin-bottom:44px;
+  @media @sm,@xs{
+    margin-bottom: 27px;
+  }
+  h4{
+    line-height: 38px;
+    margin-top: 44px;
+    @media @sm,@xs{
+      margin-top: 17px;
+    }
+    margin-bottom: 10px;
+  }
+  p{
+    line-height: 22px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .relative{
+    position: relative;
+    
+  }
+  .footer__submit{
+    outline:none;
+    position: absolute;
+    top: 13px;
+    right: 16px;
+    background: url("../images/newsletter-arrow.png") center center white no-repeat;
+    width: 7px;
+    height: 13px;
+    display: block;
+    border: none;
+    margin-left: 1px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+
+  }
+}
+
+.second-line{
+  h4{
+    display: inline-block;
+    line-height: 36px;
+  }
+  .logo__banka{
+    margin-right: 28px;
+    margin-left: 15px;
+  }
+  border-top:12px solid #fafafa;
+  border-bottom:12px solid #fafafa;
+
+}
+
+.copyright{
+  margin-top: 57px;
+  margin-bottom: 50px;
+  @media @xs{
+    margin-top: 27px;
+    margin-bottom: 30px;
+  }
+  font-size: 13px;
+  color: #797979;
+  p{
+    line-height: 29px;
+
+    @media @min-sm{
+      margin: 0;
+    }
+
+  }
+}

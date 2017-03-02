@@ -1,0 +1,97 @@
+﻿@import "mixins";
+
+.leftmenu__title{
+  font-size: 28px;
+  color: @main-color;
+  line-height:44px;
+  margin-bottom: 12px;
+  font-weight: 500;
+  margin-top: 52px;
+  @media @sm,@xs{
+    margin-top: 22px;
+  }
+}
+
+
+.leftmenu {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  margin-bottom: 43px;
+
+  > li {
+    display: block;
+    width: 100%;
+    > a {
+      color: @gray;
+      display: block;
+      width: 100%;
+      line-height: 20px;
+      padding-bottom: 10px;
+
+
+      &:after{
+        content: "";
+        display: block;
+        margin-top: 6px;
+        vertical-align: middle;
+        width: 25px;
+        height: 3px;
+        background: url("../../project/images/leftmenu-a.png")no-repeat;
+      }
+
+      &:hover, &:focus {
+        text-decoration: none;
+        
+        &:before{
+          content: "";
+          display: inline-block;
+          margin-right: 6px;
+          vertical-align: middle;
+          width: 8px;
+          height: 9px;
+          position: relative;
+          top: -2px;
+          background: url("../../project/images/leftmenu-active-second.png")no-repeat;
+        }
+        &:after{
+          content: "";
+          display: block;
+          margin-top: 6px;
+          vertical-align: middle;
+          width: 128px;
+          height: 3px;
+          background: url("../../project/images/leftmenu-active.png")no-repeat;
+        }
+
+      }
+
+    }
+    &.active > a {
+      text-decoration: none;
+      &:before{
+        content: "";
+        display: inline-block;
+        margin-right: 6px;
+        vertical-align: middle;
+        top: -2px;
+        position: relative;
+        width: 8px;
+        height: 9px;
+        background: url("../../project/images/leftmenu-active-second.png")no-repeat;
+      }
+      &:after{
+        content: "";
+        display: block;
+        margin-top: 6px;
+        vertical-align: middle;
+        width: 128px;
+        height: 3px;
+        background: url("../../project/images/leftmenu-active.png")no-repeat;
+      }
+    }
+
+  }
+}
+
+

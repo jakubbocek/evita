@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <title>Evita</title>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+
+    <link rel="stylesheet" href="project/css/main.css">
+
+
+    <link rel="shortcut icon" href="project/favicon.ico">
+
+
+
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: { families: [ 'Raleway:400,700,500,300:latin,latin-ext' ] }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })(); </script>
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-3 col-xs-4 ">
+                <h1 class="header__logo"><a href="#" class="logo__area" >Název eshopu</a></h1>
+            </div>
+
+            <div class="col-md-8 col-sm-9">
+                <div>
+                    <div class="popup-toggle visible-xs">
+							<span class="toggle-button " data-toggle="collapse" data-target="#menu" aria-expanded="true">
+							<a class="visible-xs" href="#"></a>
+								<span class="toggle-icon">
+									<span></span>
+									<span></span>
+									<span></span>
+								</span>
+							</span>
+
+                        <span class="pull-right visible-xs">
+                        <div class="cart">
+                            <a href="#">
+                                <div class="cart-icon"></div>
+                                <span class="count">3</span>
+                            </a>
+                        </div>
+                        <a href="#">
+                    <span class="sign-in">
+
+                    </span>
+
+                    </a>
+                    </span>
+                        <div class="col-xs-12 no-padding">
+                            <button type="submit" class="submit "></button>
+                            <input type="search" class="search " placeholder="Vyhladávanie...">
+
+                        </div>
+                    </div>
+
+                    <div class="clearfix visible-xs"></div>
+
+                    <ul id="menu" class="menu collapse " aria-expanded="true">
+                        <li>
+                            <a href="#">EVITA DAY</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">e-shop</a>
+                        </li>
+                        <li >
+                            <a href="#">merchandise</a>
+                        </li>
+                        <li>
+                            <a href="#">evitapress</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                blog
+                            </a>
+                        </li>
+
+                        <div class="visible-xs submenu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 padding__left">
+                                        <nav class="nav">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="home-icon"></a>
+                                                </li>
+                                                <li class="active">
+                                                    <a href="#">NOVINKY</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">AKCIE</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">PRIPRAVUJEME</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <span class=" hidden-xs">
+                        <div class="cart">
+                            <a href="#">
+                                <div class="cart-icon"></div>
+                                <span class="count">3</span>
+                            </a>
+                        </div>
+                        <a href="#">
+                    <span class="sign-in">
+
+                    </span>
+
+                    </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="hidden-xs submenu">
+        <div class="container">
+            <div class="row">
+                <div class=" col-lg-4 col-md-5 col-sm-5">
+
+                    <nav class="nav">
+                        <ul>
+                            <li>
+                                <a href="#" class="home-icon"></a>
+                            </li>
+                            <li class="active">
+                                <a href="#">NOVINKY</a>
+                            </li>
+                            <li>
+                                <a href="#">AKCIE</a>
+                            </li>
+                            <li>
+                                <a href="#">PRIPRAVUJEME</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <div class=" col-lg-4 col-sm-3">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" data-toggle="dropdown">KATEGÓRIE
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Kategorie 1</a></li>
+                            <li><a href="#">Kategorie 2</a></li>
+                            <li><a href="#">Kategorie 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-3">
+                    <button type="submit" class="submit "></button>
+                    <input type="search" class="search " placeholder="Vyhladávanie...">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main class="cart__page">
+    <div class="container">
+        <ul class="cart__nav">
+            <li class="cart__nav__li"><span  class=" cart__nav__li__span  ">1</span><a class="cart__nav__li__a" href="#">Nákupní košík</a></li>
+            <li class="cart__nav__li"> <span class="cart__nav__li__span  cart__nav__li__span--active">2</span><a class="cart__nav__li__a" href="#"> Doprava a platba </a></li>
+            <li class="cart__nav__li"><span class="cart__nav__li__span">3</span><a class="cart__nav__li__a" href="#"> Dodací údaje </a></li></li>
+            <li class="cart__nav__li"><span class="cart__nav__li__span">4</span><a class="cart__nav__li__a" href="#">Souhrn</a></li>
+        </ul>
+
+        <ul class="doprava">
+            <li>Vyberte si další zboží v hodnotě alespoň <strong>599 Kč</strong>     a získejte <strong>dopravu zdarma</strong></li>
+        </ul>
+
+        <div class="row margin-bottom">
+            <div class=" col-md-6 border__left">
+            <h4 class="doprava__title">Doprava</h4>
+                <div class="row">
+                    <div class="col-lg-7 col-xs-8">
+                        <input class="checkbox" type="checkbox" id="osobni" name="zdopravy">
+                        <label class="label" for="osobni"><strong>Osobní odběr</strong> - Na Ulici 24, Bratislava </label>
+                    </div>
+                    <div class="col-xs-4">
+                        <label for="osobni" class="label"><span class="price ">zdarma</span></label>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-7 col-xs-8">
+                        <input class="checkbox" type="checkbox" id="balik" name="zdopravy">
+                        <label class="label"  for="balik"><strong>Česká pošta</strong> - Balík do ruky </label>
+                    </div>
+                    <div class="col-xs-4">
+                        <label for="balik" class="label"><span class="price text-right">2,75 €</span></label>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-7 col-xs-8">
+                        <input class="checkbox" type="checkbox" id="posta" name="zdopravy">
+                        <label class="label" for="posta"><strong>Česká pošta</strong> - Balík na poštu </label>
+                    </div>
+                    <div class="col-xs-4">
+                        <label for="posta" class="label"><span class="price">3 €</span></label>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-7 col-xs-8">
+                        <input class="checkbox" type="checkbox" id="ppl" name="zdopravy">
+                        <label class="label" for="ppl"><strong>PPL</strong> </label>
+                    </div>
+                    <div class="col-xs-4">
+                        <label for="ppl" class="label"><span class="price">2,5 €</span></label>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class=" col-md-5 col-md-offset-1 ">
+                <h4 class="platba__title">Platba</h4>
+                <div class="row">
+                    <div class="col-lg-7 col-xs-8">
+                        <input class="checkbox" type="checkbox" id="osobni2" name="zdopravy">
+                        <label class="label" for="osobni2"><strong>Při osobním odběru</strong>  </label>
+                    </div>
+                    <div class="col-xs-4 ">
+                        <label for="osobni2" class="label"><span class="price ">zdarma</span></label>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-7 col-xs-8">
+                        <input class="checkbox" type="checkbox" id="online" name="zdopravy">
+                        <label class="label"  for="online"><strong>On-line bankovním převodem</strong> </label>
+                    </div>
+                    <div class="col-xs-4 ">
+                        <label for="online" class="label"><span class="price text-right">zdarma</span></label>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-7 col-xs-8">
+                        <input class="checkbox" type="checkbox" id="kartou" name="zdopravy">
+                        <label class="label" for="kartou"><strong>Platba kartou</strong></label>
+                    </div>
+                    <div class="col-xs-4 ">
+                        <label for="kartou" class="label"><span class="price">zdarma</span></label>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-7 col-xs-8">
+                        <input class="checkbox" type="checkbox" id="dobirka" name="zdopravy">
+                        <label class="label" for="dobirka"><strong>Na dobírku</strong> </label>
+                    </div>
+                    <div class="col-xs-4 ">
+                        <label for="dobirka" class="label"><span class="price">2,5 €</span></label>
+
+                    </div>
+                </div>
+
+            </div>
+        </div marg>
+        <div class="center">
+            <a href="#" class=" back-btn "> zpět k nákupu</a>
+            <a href="#" class="continue-btn "> pokračovat</a>
+        </div>
+    </div>
+
+
+
+</main>
+
+<footer >
+    <div class="footer">
+        <div class="first-line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 visible-lg visible-md ">
+                        <h4>Kontaktné informácie</h4>
+                        <p>Máte otázky? <u><a href="#">Napište nám</a></u></p>
+                        <p>alebo volajte na 0910 22 11 00</p>
+                    </div>
+                    <div class="col-md-3  visible-xs visible-sm text-center">
+                        <h4>Kontaktné informácie</h4>
+                        <p>Máte otázky? <u><a href="#">Napište nám</a></u></p>
+                        <p>alebo volajte na 0910 22 11 00</p>
+                    </div>
+                    <div class="col-md-3 visible-lg visible-md ">
+                        <h4>Facebook</h4>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=217&height=70&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="217" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    </div>
+                    <div class="col-md-3  visible-xs visible-sm text-center">
+                        <h4>Facebook</h4>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=217&height=70&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="217" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    </div>
+                    <div class="col-md-3 visible-lg visible-md ">
+                        <h4>Instagram</h4>
+                        <a href="#"><img src="project/images/instagram.png" class="img-responsive" alt=""></a>
+                    </div>
+                    <div class="col-md-3  visible-xs visible-sm text-center">
+                        <h4>Instagram</h4>
+                        <div class="text-center">
+                            <a href="#"><img src="project/images/instagram.png" class="" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 visible-lg visible-md  ">
+                        <h4>Newsletter</h4>
+                        <p>Zaregistrujte sa do nášeho newslettera.</p>
+                        <div class="relative">
+                            <input type="email" class="footer__input" placeholder="Sem napíšte váš email">
+                            <button type="submit" class="footer__submit"></button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 visible-xs text-center visible-sm">
+                        <h4>Newsletter</h4>
+                        <p>Zaregistrujte sa do nášeho newslettera.</p>
+                        <div class="relative">
+                            <input type="email" class="footer__input" placeholder="Sem napíšte váš email">
+                            <button type="submit" class="footer__submit"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="second-line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="">U nás muzete platit prostrednictvim:</h4>
+                        <a href="#"><img src="project/images/banka-logo.png" class="logo__banka" alt=""></a>
+                        <a href="#"><img src="project/images/csob-logo.png" alt=""></a>
+
+                        <a href="#"><img src="project/images/banka-logo.png" class="logo__banka" alt=""></a>
+                        <a href="#"><img src="project/images/csob-logo.png" alt=""></a>
+
+                        <a href="#"><img src="project/images/banka-logo.png" class="logo__banka" alt=""></a>
+                        <a href="#"><img src="project/images/csob-logo.png" alt=""></a>
+
+                        <a href="#"><img src="project/images/banka-logo.png" class="logo__banka" alt=""></a>
+                        <a href="#"><img src="project/images/csob-logo.png" alt=""></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 hidden-xs">
+                        <p>(c) 2010 - 2016 EVITASTORE, Všetky práva vyhradené. Právné informácie - Obchodné podmenky - Ochrana osobných údajov</p>
+
+                    </div>
+                    <div class="col-xs-12 text-center visible-xs">
+                        <p>(c) 2010 - 2016 EVITASTORE, Všetky práva vyhradené. Právné informácie - Obchodné podmenky - Ochrana osobných údajov</p>
+                    </div>
+
+                    <div class="col-md-2 text-right hidden-xs">
+                        <a href="#"> <img src="project/images/logo-footer.png" alt=""></a>
+
+                    </div>
+                    <div class="col-xs-12 text-center visible-xs">
+                        <a href="#"> <img src="project/images/logo-footer.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!--[if lt IE 9]>
+<script src="bower_components/respond/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="project/js/project.js"></script>
+
+
+</body>
+</html>
